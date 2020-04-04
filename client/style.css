@@ -1,0 +1,10 @@
+body {
+  padding: 100px;
+}
+input {
+  font-size: 16pt;
+}
+button {
+  width: 100px;
+  height: 30px;
+}
