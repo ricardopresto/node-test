@@ -1,15 +1,15 @@
 const url = "http://localhost:5000/";
 
+import axios from "axios";
+
 const sendBtn = document.getElementById("send");
 const input = document.getElementById("input");
 
 sendBtn.addEventListener("click", sendBtnClick);
 
 function sendBtnClick() {
-  fetch(url).then(res => {
-    console.log(res.status);
-    res.json().then(data => {
-      console.log(data);
-    });
-  });
+  axios
+    .post(url, { message: "success" })
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err));
 }
