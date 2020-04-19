@@ -7,9 +7,11 @@ const input = document.getElementById("input");
 
 sendBtn.addEventListener("click", sendBtnClick);
 
+var infoArray = [{ one: "spam" }, { two: "eggs" }];
+
 function sendBtnClick() {
   axios
-    .post(url, { message: "success" })
+    .post(url, infoArray)
     .then(res => console.log(res.data))
     .catch(err => console.log(err));
 }

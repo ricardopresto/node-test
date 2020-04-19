@@ -13,7 +13,7 @@ app.listen(port, () => {
 });
 
 app.post("/", (req, res) => {
-  fs.writeFile("newfile.txt", JSON.stringify(req.body), () => {});
-
-  res.send(req.body);
+  fs.writeFile("newfile.txt", JSON.stringify(req.body), () => {
+    res.send(req.body);
+  });
 });
