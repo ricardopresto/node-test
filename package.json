@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "nodemon ./server/app.js",
-    "start": "./server/app.js"
+    "start": "./server/app.js",
+    "build": "parcel build ./client/index.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "cssnano": "^4.1.10",
+    "nodemon": "^2.0.2",
+    "parcel-bundler": "^1.12.4"
   }
 }
